@@ -4,6 +4,7 @@
  e.g. console.log(sumOfMultiples(10)) // 23;
  
 > Solution
+
    > const sumOfMultiples = (number) => {
   let sum = 0;
   for (let i = 3; i < number; i++) {
