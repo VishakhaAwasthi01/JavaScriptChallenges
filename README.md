@@ -25,7 +25,7 @@ console.log(solution(-15)); // 0
  
  
 ## 2. FizzBuzz
- ### Write a program that prints the numbers from 1 to 100 and for multiples of ‘3’ print “Fizz” instead of the number, for the multiples of ‘5’ print “Buzz” and for multiple of both 3 and 5 print "FizzBuzz" 
+ ### Write a program that prints the numbers from 1 to 100 and for multiples of ‘3’ print “Fizz” instead of the number, for the multiples of ‘5’ print “Buzz” and for multiple of both 3 and 5 print "FizzBuzz". 
                              
 <details><summary>Solution</summary>
  
@@ -45,6 +45,29 @@ console.log(solution(-15)); // 0
     }
   }
   return i;
+}
+```
+</details> 
+
+## 3. Count Vowel
+### Count the number of vowels in a string.
+
+```js
+console.log(countVowels('hello')); // 2
+```
+
+<details><summary>Solution</summary>
+
+ ```js
+function countVowels(str) {
+  let vowelArr = ["a", "e", "i", "o", "u"];
+  let vowelCount = 0;
+  for (let char of str) {
+    if (vowelArr.includes(char)) {
+      vowelCount++;
+    }
+  }
+  return vowelCount;
 }
 ```
 </details> 
