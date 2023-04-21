@@ -71,3 +71,23 @@ function countVowels(str) {
 }
 ```
 </details> 
+
+## Reverse an Array
+### Reverse an array without using javaScript reverse() method.
+
+```js
+console.log(reverseArray([1, 2, 3, 4, 5])); //  [5, 4, 3, 2, 1]
+
+```
+<details><summary>Solution</summary>
+
+```js
+let reversedArray = [];
+function reverseArray(arr) {
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversedArray.push(arr[i]);
+    console.log(i);
+  }
+  return reversedArray;
+}
+```
