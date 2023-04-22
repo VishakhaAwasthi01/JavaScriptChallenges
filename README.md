@@ -108,3 +108,22 @@ function sumOfNumbers(arr) {
 }
 ```
  </details>
+ 
+ ## 6. Filter negative numbers 
+### Create a function that filters out negative numbers from an array.
+
+```js
+console.log(filterNegative([0, 1, -2, 3, 4, 5])); //[0, 1, 3, 4, 5]
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+ 
+let newArr = [];
+function filterNegative(arr) {
+  newArr = arr.filter((e) => e >= 0);
+  return newArr;
+}
+```
+ </details> 
