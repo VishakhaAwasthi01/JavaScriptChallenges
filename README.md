@@ -98,7 +98,7 @@ function reverseArray(arr) {
 ```js
 console.log(sumOfNumbers([1, 2, 3, 4, 5])); //15
 ```
-<details><summary>Solution<summary>
+<details><summary>Solution</summary>
 
 ```js
 let sum = 0;
