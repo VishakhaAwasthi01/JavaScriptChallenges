@@ -91,8 +91,9 @@ function reverseArray(arr) {
 }
 ```
  </details>
+ 
 ## 5. Sum of Array 
-### Calculate the sum of numbers within an array 
+### Calculate the sum of numbers within an array. 
 
 ```js
 console.log(sumOfNumbers([1, 2, 3, 4, 5])); //15
