@@ -127,3 +127,26 @@ function filterNegative(arr) {
 }
 ```
  </details> 
+
+ ## 7. Check Anagram.
+### Writ a program to check whether two strings are Anagram of each other.
+
+```js
+console.log(isAnagram("LISTEN", "silent")); //true
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+ function isAnagram(str1, str2) {
+  let checkStr1 = str1.split("").sort().join("").toLowerCase();
+  let checkStr2 = str2.split("").sort().join("").toLowerCase();
+  if (checkStr1.length !== checkStr2.length) {
+    return console.log("Invalid Input");
+  } else if (checkStr1.length === checkStr2.length && checkStr1 === checkStr2) {
+    return true;
+  }
+  return false;
+}
+```
+ </details> 
