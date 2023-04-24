@@ -185,3 +185,25 @@ function isPalindrome(str) {
 }
 ```
  </details> 
+ 
+ ## 10. Longest String in an Array.
+### Write a javaScript function that accepts an array of strings. Return the longest string.
+
+```js
+console.log(longestString(["hi", "hey", "there"])); //there
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+function longestString(arr) {
+  let longest = "";
+  arr.forEach((item) => {
+    if (item.length > longest.length) {
+      longest = item;
+    }
+  });
+  return longest;
+}
+```
+ </details> 
