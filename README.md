@@ -174,6 +174,7 @@ sampleArray.forEach(function (x) {
 
 ```js
 console.log(isPalindrome("Madam")); //true
+console.log(isPalindrome("game")); //false 
 ```
  
 <details><summary>Solution</summary>
