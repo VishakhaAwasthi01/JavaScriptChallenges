@@ -150,3 +150,21 @@ console.log(isAnagram("LISTEN", "silent")); //true
 }
 ```
  </details> 
+ 
+ ## 8. Occurence of duplicate
+### Writ a program to count duplicate elements in an array.
+
+```js
+console.log(counts); //{1: 2, 2: 3, 3: 2, 4: 2, 5: 2}
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+ const counts = {};
+const sampleArray = [1, 2, 2, 3, 4, 5, 2, 4, 5, 3, 1];
+sampleArray.forEach(function (x) {
+  counts[x] = (counts[x] || 0) + 1;
+});
+```
+ </details> 
