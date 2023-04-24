@@ -168,3 +168,20 @@ sampleArray.forEach(function (x) {
 });
 ```
  </details> 
+ 
+ ## 9. Check Palindrome.
+### Writ a javaScript program to check whether a string is palindrome or not.
+
+```js
+console.log(isPalindrome("Madam")); //true
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+function isPalindrome(str) {
+  let lowerCase = str.toLowerCase();
+  return lowerCase === lowerCase.split("").reverse().join("");
+}
+```
+ </details> 
