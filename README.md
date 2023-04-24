@@ -1,5 +1,5 @@
 # JavaScript Challenges
-## 1. Multiple of 3 and 5
+## 1. Multiple of 3 and 5.
 ### Write a solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.
 
 ```js
@@ -49,7 +49,7 @@ console.log(solution(-15)); // 0
 ```
 </details> 
 
-## 3. Count Vowel
+## 3. Count Vowel.
 ### Count the number of vowels in a string.
 
 ```js
@@ -72,7 +72,7 @@ function countVowels(str) {
 ```
 </details> 
 
-## 4. Reverse an Array
+## 4. Reverse an Array.
 ### Reverse an array without using javaScript reverse() method.
 
 ```js
@@ -92,7 +92,7 @@ function reverseArray(arr) {
 ```
  </details>
  
-## 5. Sum of Array 
+## 5. Sum of Array. 
 ### Calculate the sum of numbers within an array. 
 
 ```js
@@ -109,7 +109,7 @@ function sumOfNumbers(arr) {
 ```
  </details>
  
- ## 6. Filter negative numbers 
+ ## 6. Filter negative numbers. 
 ### Create a function that filters out negative numbers from an array.
 
 ```js
@@ -151,7 +151,7 @@ console.log(isAnagram("LISTEN", "silent")); //true
 ```
  </details> 
  
- ## 8. Occurence of duplicate
+ ## 8. Occurence of duplicates.
 ### Writ a program to count duplicate elements in an array.
 
 ```js
