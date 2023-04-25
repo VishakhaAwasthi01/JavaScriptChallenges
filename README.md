@@ -234,3 +234,19 @@ function flatten(arr) {
 }
 ```
  </details> 
+ 
+ ## 12. Concatenation of Array.
+### Write a function that given an integer array arr of length n, returns an array of length 2n where arr is concatenated to itself.
+
+```js
+console.log(concatArray([1, 2, 3])); //[1, 2, 3, 1, 2, 3]
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+const concatArray = (arr) => {
+  return [...arr, ...arr];
+};
+```
+ </details> 
