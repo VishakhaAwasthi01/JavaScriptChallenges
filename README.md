@@ -208,3 +208,29 @@ function longestString(arr) {
 }
 ```
  </details> 
+ 
+ ## 11.Flat nested Array.
+### Flatten an array without using .flat() method of javaScript.
+
+```js
+console.log(flatten([1, [2, [3], 4, [5, 6, [7]]]])); //[1, 2, 3, 4, 5, 6, 7]
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+function flatten(arr) {
+  const newArr = arr.reduce((acc, item) => {
+    if (Array.isArray(item)) {
+      acc = acc.concat(flatten(item));
+    } else {
+      acc.push(item);
+    }
+
+    return acc;
+  }, []);
+
+  return newArr;
+}
+```
+ </details> 
