@@ -209,7 +209,7 @@ function longestString(arr) {
 ```
  </details> 
  
- ## 11.Flat nested Array.
+ ## 11. Flat nested Array.
 ### Flatten an array without using .flat() method of javaScript.
 
 ```js
