@@ -1,4 +1,4 @@
-# JavaScript Challenges
+# JavaScript Challenges :computer:
 ## 1. Multiple of 3 and 5.
 ### Write a solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.
 
