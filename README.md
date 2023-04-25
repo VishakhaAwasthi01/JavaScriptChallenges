@@ -187,7 +187,7 @@ function isPalindrome(str) {
 ```
  </details> 
  
- ## 10. Longest String in an Array.
+ ## 10. Longest string in an Array.
 ### Write a javaScript function that accepts an array of strings. Return the longest string.
 
 ```js
