@@ -326,7 +326,7 @@ function mergeTwoArray(arr1, arr2){
 console.log(missingNumber([1, 2, 3, 5, 6])); //4
 ```
  
-<details><summary>Solution 1</summary>
+<details><summary>Solution</summary>
  
 ```js
 function missingNumber(arr){
@@ -343,3 +343,25 @@ function missingNumber(arr){
 ```
  </details> 
 
+ ## 14. Largest number in an Array.
+### Write a function that given an array of numbers, returns the largest number.
+
+```js
+console.log(largestNumber([1, 2, 3, 8, 5, 6])); //8
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+function largestNumber(arr){
+  let largestNum = 0;
+  for(let i=0; i<arr.length; i++){
+    if(arr[i]>largestNum)
+     { 
+       largestNum=arr[i];
+     }
+  }
+  return largestNum;
+}
+```
+ </details> 
