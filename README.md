@@ -118,12 +118,25 @@ function reverseArray(arr) {
 ```js
 console.log(sumOfNumbers([1, 2, 3, 4, 5])); //15
 ```
-<details><summary>Solution</summary>
+<details><summary>Solution 1</summary>
 
 ```js
 let sum = 0;
 function sumOfNumbers(arr) {
   sum = arr.reduce((acc, curr) => acc + curr, sum);
+  return sum;
+}
+```
+ </details>
+
+ <details><summary>Solution 2</summary>
+
+```js
+function sumofAllNum(arr){
+  let sum = 0;
+  for(let i = 0; i< arr.length; i++){
+    sum +=arr[i]
+  }
   return sum;
 }
 ```
