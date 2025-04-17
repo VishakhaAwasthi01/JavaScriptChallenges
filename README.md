@@ -365,3 +365,33 @@ function largestNumber(arr){
 }
 ```
  </details> 
+
+ ## 15. Remove duplicates from an Array.
+### Write a function that given an array with duplicate values, removes the duplicates and return new array.
+
+```js
+console.log(removeDuplicates(["a","b","c","b"])) //["a","b","c"]
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+function removeDuplicates(arr){
+  let newArr=[];
+  for(let i=0; i<= arr.length; i++){
+    let isDuplicate = false;
+    for(let j=0; j<=newArr.length; j++ ){
+       if(arr[i]=== newArr[j]){
+     isDuplicate = true;
+         break;
+    }
+    }
+    if(!isDuplicate){
+      newArr.push(arr[i])
+    }
+   
+  }
+  return newArr;
+}
+```
+ </details> 
