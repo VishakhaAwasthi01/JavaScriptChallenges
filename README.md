@@ -305,3 +305,28 @@ function mergeTwoArray(arr1, arr2){
 }
 ```
  </details> 
+
+  ## 13. Missing number in an Array.
+### Write a function that given an array of consecutive numbers, returns the missing number.
+
+```js
+console.log(missingNumber([1, 2, 3, 5, 6])); //4
+```
+ 
+<details><summary>Solution 1</summary>
+ 
+```js
+function missingNumber(arr){
+  let totalSum = 0;
+  let expectedSum = 0;
+  for(let i= 0; i<arr.length; i++){
+    totalSum = totalSum + arr[i];
+  }
+  for(let i=1; i<= arr.length+1; i++){
+    expectedSum = expectedSum+ i;
+  }
+  return expectedSum-totalSum;
+}
+```
+ </details> 
+
