@@ -210,12 +210,25 @@ console.log(isPalindrome("Madam")); //true
 console.log(isPalindrome("game")); //false 
 ```
  
-<details><summary>Solution</summary>
+<details><summary>Solution 1</summary>
  
 ```js
 function isPalindrome(str) {
   let lowerCase = str.toLowerCase();
   return lowerCase === lowerCase.split("").reverse().join("");
+}
+```
+ </details> 
+
+ <details><summary>Solution 2</summary>
+ 
+```js
+function isPalindrome(str){
+  let reverseString=""
+  for(let i = str.length-1; i>=0; i--){
+    reverseString = reverseString + str[i]
+  }
+  return str == reverseString;
 }
 ```
  </details> 
