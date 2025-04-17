@@ -56,7 +56,7 @@ console.log(solution(-15)); // 0
 console.log(countVowels('hello')); // 2
 ```
 
-<details><summary>Solution</summary>
+<details><summary>Solution 1</summary>
 
  ```js
 function countVowels(str) {
@@ -71,7 +71,25 @@ function countVowels(str) {
 }
 ```
 </details> 
+<details>
+ <summary>Solution 2</summary>
+ ```js
+ function countVowels(str){
+  let count =0;
+  let vowels = ['a','e','i','o','u']
+  for(let i =0; i < str.length ;i++){
+    var chars= str[i].toLowerCase()
+    for(let j =0 ;j< vowels.length; j++){
+      if(chars===vowels[j]){
+        count++;
+      }
 
+    }
+  }
+  return count;
+}
+ ```
+</details>
 ## 4. Reverse an Array.
 ### Reverse an array without using javaScript reverse() method.
 
@@ -219,18 +237,14 @@ console.log(flatten([1, [2, [3], 4, [5, 6, [7]]]])); //[1, 2, 3, 4, 5, 6, 7]
 <details><summary>Solution</summary>
  
 ```js
-function flatten(arr) {
-  const newArr = arr.reduce((acc, item) => {
-    if (Array.isArray(item)) {
-      acc = acc.concat(flatten(item));
+function flattenArray(nestedArray) {
+  return nestedArray.reduce(function(flat, toFlatten) {
+    if (Array.isArray(toFlatten)) {
+      return flat.concat(flattenArray(toFlatten));
     } else {
-      acc.push(item);
+      return flat.concat(toFlatten);
     }
-
-    return acc;
   }, []);
-
-  return newArr;
 }
 ```
  </details> 
