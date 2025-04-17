@@ -271,11 +271,37 @@ function flattenArray(nestedArray) {
 console.log(concatArray([1, 2, 3])); //[1, 2, 3, 1, 2, 3]
 ```
  
-<details><summary>Solution</summary>
+<details><summary>Solution 1</summary>
  
 ```js
 const concatArray = (arr) => {
   return [...arr, ...arr];
 };
+```
+ </details> 
+
+ <details><summary>Solution 2</summary>
+ 
+```js
+function mergeTwoArray(arr1, arr2){
+  let res=[]
+  for(let i=0; i<arr1.length; i++){
+    if(!arr1[i]){
+      res.push(arr2)
+    }
+    else{
+      res.push(arr1[i])
+    }
+  }
+  for(let j=0; j<arr2.length; j++){
+    if(!arr2[j]){
+      return;
+    }
+    else{
+      res.push(arr2[j])
+    }
+  }
+  return res;
+}
 ```
  </details> 
