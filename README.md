@@ -71,8 +71,9 @@ function countVowels(str) {
 }
 ```
 </details> 
-<details>
- <summary>Solution 2</summary>
+
+<details><summary>Solution 2</summary>
+ 
  ```js
  function countVowels(str){
   let count =0;
@@ -90,6 +91,7 @@ function countVowels(str) {
 }
  ```
 </details>
+
 ## 4. Reverse an Array.
 ### Reverse an array without using javaScript reverse() method.
 
