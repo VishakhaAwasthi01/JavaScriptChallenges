@@ -395,3 +395,23 @@ function removeDuplicates(arr){
 }
 ```
  </details> 
+
+  ## 16. Captitalise first letter of each word.
+### Write a function that given a string captitalise first letter of each word.
+
+```js
+console.log(capitalizeWords("hello world")) //"Hello World"
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+function capitalizeWords(str) {
+  return str
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+```
+ </details> 
+
