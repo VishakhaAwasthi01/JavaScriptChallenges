@@ -415,3 +415,32 @@ function capitalizeWords(str) {
 ```
  </details> 
 
+  ## 17. Find the First Non-Repeating Character
+### Write a function that given a string return the first character that does not repeat anywhere in the string.
+If all characters repeat, return null
+```js
+console.log(firstNonRepeatingChar("xxyz")) //"y"
+console.log(firstNonRepeatingChar("aabb"))  //null
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+function firstNonRepeatingChar(str) {
+  const freq = {};
+
+  for (let char of str) {
+    freq[char] = (freq[char] || 0) + 1;
+  }
+
+  for (let char of str) {
+    if (freq[char] === 1) {
+      return char;
+    }
+  }
+
+  return null; 
+}
+
+```
+ </details> 
