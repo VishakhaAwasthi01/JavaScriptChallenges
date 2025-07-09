@@ -444,3 +444,52 @@ function firstNonRepeatingChar(str) {
 
 ```
  </details> 
+
+  ## 18. Object Grouping
+### Given an object where each key maps to a value with a city, group the keys by city.
+```js
+const obj ={
+    "name" : {
+             "city" : "agra",
+             "status" : "new"
+     },
+  "name2" : {
+             "city" : "agra",
+             "status" : "new"
+     },
+ 
+  "name3" : {
+             "city" : "delhi",
+             "status" : "new"
+     },
+ 
+ 
+  "name4" : {
+             "city" : "mumbai",
+             "status" : "new"
+     },
+}
+console.log(groupByObject(obj)) // {
+   "agra" : [ name, name2 ],
+   "delhi" : [name3],
+   "mumbai" : [name4]  
+}
+```
+ 
+<details><summary>Solution</summary>
+ 
+```js
+function groupByObject(obj){
+let result = {};
+for (let key in obj) {
+  const city = obj[key].city;
+  if (!result[city]) {
+    result[city] = [];
+  }
+   result[city].push(key);
+}
+  return result
+}
+
+```
+ </details> 
